@@ -1,0 +1,43 @@
+/* MessageBar.css */
+
+.message-bar {
+    padding: 10px;
+    border-top: 1px solid #343541;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2E2F39;
+}
+.message-form{
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.message-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #343541; */
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.message-bar input:focus {
+    outline: none;
+    background-color: #3E3F4B;
+}
+
+.message-bar button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message-bar button:hover {
+    background-color: grey;
+}

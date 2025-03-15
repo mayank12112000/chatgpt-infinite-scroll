@@ -1,0 +1,571 @@
+{
+    "title": "HDFC e-Mandate Query",
+    "create_time": 1739445517.328399,
+    "update_time": 1739447086.817501,
+    "mapping": {
+        "bbb23f30-e5c8-45bd-9f43-707786acd8b5": {
+            "id": "bbb23f30-e5c8-45bd-9f43-707786acd8b5",
+            "message": null,
+            "parent": null,
+            "children": [
+                "33a49f0e-b4f6-4ac5-b576-20cb896fdbb9"
+            ]
+        },
+        "33a49f0e-b4f6-4ac5-b576-20cb896fdbb9": {
+            "id": "33a49f0e-b4f6-4ac5-b576-20cb896fdbb9",
+            "message": {
+                "id": "33a49f0e-b4f6-4ac5-b576-20cb896fdbb9",
+                "author": {
+                    "role": "system",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": null,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        ""
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": true,
+                "weight": 0.0,
+                "metadata": {
+                    "is_visually_hidden_from_conversation": true
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "bbb23f30-e5c8-45bd-9f43-707786acd8b5",
+            "children": [
+                "bbb21436-d5fc-4e27-84a2-558d0448fb1d"
+            ]
+        },
+        "bbb21436-d5fc-4e27-84a2-558d0448fb1d": {
+            "id": "bbb21436-d5fc-4e27-84a2-558d0448fb1d",
+            "message": {
+                "id": "bbb21436-d5fc-4e27-84a2-558d0448fb1d",
+                "author": {
+                    "role": "user",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739445517.337777,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "E-Mandate!\nRs.5000.00 will be deducted on 15/02/25, 00:00:00\nFor Indian Clearing Corporation mandate\nUMN e780d615729042b11cbd00962edc@yesg\nMaintain Balance\n-HDFC Bank\nI got this SMS from hdfc"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": null,
+                "weight": 1.0,
+                "metadata": {
+                    "citations": [],
+                    "content_references": [],
+                    "search_result_groups": [],
+                    "image_results": [],
+                    "real_time_audio_has_video": false,
+                    "request_id": "91146b2f2ed2e61a-DEL",
+                    "message_source": null,
+                    "timestamp_": "absolute",
+                    "message_type": null
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "33a49f0e-b4f6-4ac5-b576-20cb896fdbb9",
+            "children": [
+                "efc864b6-0cca-4ccf-b45e-458b9dbe101d"
+            ]
+        },
+        "efc864b6-0cca-4ccf-b45e-458b9dbe101d": {
+            "id": "efc864b6-0cca-4ccf-b45e-458b9dbe101d",
+            "message": {
+                "id": "efc864b6-0cca-4ccf-b45e-458b9dbe101d",
+                "author": {
+                    "role": "assistant",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739445530.541711,
+                "update_time": null,
+                "content": {
+                    "content_type": "model_editable_context",
+                    "model_set_context": "",
+                    "repository": null,
+                    "repo_summary": null,
+                    "structured_context": null
+                },
+                "status": "finished_successfully",
+                "end_turn": null,
+                "weight": 1.0,
+                "metadata": {
+                    "message_type": null,
+                    "model_slug": "gpt-4o",
+                    "default_model_slug": "auto",
+                    "parent_id": "bbb21436-d5fc-4e27-84a2-558d0448fb1d",
+                    "request_id": "91146b2f2ed2e61a-DEL",
+                    "timestamp_": "absolute",
+                    "model_switcher_deny": []
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "bbb21436-d5fc-4e27-84a2-558d0448fb1d",
+            "children": [
+                "f6e91011-1132-45bc-8453-7dbd91b24636"
+            ]
+        },
+        "f6e91011-1132-45bc-8453-7dbd91b24636": {
+            "id": "f6e91011-1132-45bc-8453-7dbd91b24636",
+            "message": {
+                "id": "f6e91011-1132-45bc-8453-7dbd91b24636",
+                "author": {
+                    "role": "assistant",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739445530.541899,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "This SMS indicates that an **E-Mandate** (Electronic Mandate) is set up on your HDFC Bank account for **Rs. 5000**, which will be automatically debited on **15th February 2025** for the **Indian Clearing Corporation**.\n\n### **What to Do Next?**\n1. **Check Your Mandates**  \n   - Log in to your **HDFC NetBanking** or **HDFC Mobile App**.  \n   - Go to **Bill Payments > e-Mandate Management** to check details of active mandates.  \n\n2. **Verify the Purpose**  \n   - If you are aware of this mandate (e.g., for a loan EMI, mutual fund SIP, insurance, or any subscription), no action is needed.  \n   - If you don’t recognize this mandate, contact **HDFC Bank Customer Care** **immediately** to raise a dispute.\n\n3. **Maintain Balance**  \n   - If this is a valid mandate, ensure **Rs. 5000** is available in your account to avoid penalties or failed transactions.\n\n4. **Cancel the Mandate (if necessary)**  \n   - If you want to stop this deduction, you may be able to cancel the e-Mandate from NetBanking or by visiting your branch.\n\nWould you like help with HDFC customer care contact details or steps to cancel it online?"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": true,
+                "weight": 1.0,
+                "metadata": {
+                    "finish_details": {
+                        "type": "stop",
+                        "stop_tokens": [
+                            200002,
+                            200007
+                        ]
+                    },
+                    "is_complete": true,
+                    "citations": [],
+                    "content_references": [],
+                    "message_type": null,
+                    "model_slug": "gpt-4o",
+                    "default_model_slug": "auto",
+                    "parent_id": "efc864b6-0cca-4ccf-b45e-458b9dbe101d",
+                    "request_id": "91146b2f2ed2e61a-DEL",
+                    "timestamp_": "absolute",
+                    "model_switcher_deny": []
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "efc864b6-0cca-4ccf-b45e-458b9dbe101d",
+            "children": [
+                "bbb21dc5-dcaf-4349-bb47-14799d01bf30"
+            ]
+        },
+        "bbb21dc5-dcaf-4349-bb47-14799d01bf30": {
+            "id": "bbb21dc5-dcaf-4349-bb47-14799d01bf30",
+            "message": {
+                "id": "bbb21dc5-dcaf-4349-bb47-14799d01bf30",
+                "author": {
+                    "role": "user",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739445632.090557,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "How to cancel"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": null,
+                "weight": 1.0,
+                "metadata": {
+                    "citations": [],
+                    "content_references": [],
+                    "search_result_groups": [],
+                    "image_results": [],
+                    "real_time_audio_has_video": false,
+                    "request_id": "91146dfc485317b2-MAA",
+                    "message_source": null,
+                    "timestamp_": "absolute",
+                    "message_type": null
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "f6e91011-1132-45bc-8453-7dbd91b24636",
+            "children": [
+                "4ba9afd4-ae1f-4197-a386-15c990a67216"
+            ]
+        },
+        "4ba9afd4-ae1f-4197-a386-15c990a67216": {
+            "id": "4ba9afd4-ae1f-4197-a386-15c990a67216",
+            "message": {
+                "id": "4ba9afd4-ae1f-4197-a386-15c990a67216",
+                "author": {
+                    "role": "assistant",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739445654.279051,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "You can cancel your **E-Mandate** in HDFC Bank using the following methods:\n\n### **1. Via HDFC NetBanking**\n1. **Log in** to [HDFC NetBanking](https://netbanking.hdfcbank.com/netbanking/) using your credentials.\n2. Go to **Bill Payments > e-Mandate Management**.\n3. Find the mandate related to **Indian Clearing Corporation**.\n4. Click on **Cancel/Deactivate** and follow the confirmation steps.\n5. You may receive an **OTP** on your registered mobile number for authentication.\n\n### **2. Via HDFC Mobile Banking App**\n1. Open the **HDFC Bank Mobile App** and log in.\n2. Navigate to **Bill Payments > e-Mandate**.\n3. Select the mandate you want to cancel.\n4. Click on **Cancel** and confirm with OTP.\n\n### **3. Contact HDFC Customer Care**\n- Call HDFC **Phone Banking** at **1800 202 6161** (Toll-Free) or **1860 267 6161** (Chargeable).\n- Request cancellation of the mandate.\n- They might ask for your **Customer ID** and **UMN (Unique Mandate Number)** from the SMS.\n\n### **4. Visit the HDFC Bank Branch**\n- Carry your **ID proof** and a **written request** to cancel the mandate.\n- The bank executive will process the cancellation.\n\n### **Important Notes**\n- Some mandates require approval from the merchant (e.g., mutual funds, loan EMIs).\n- Cancellation may take **2-5 working days** to reflect.\n- Ensure you receive a confirmation SMS/email after cancellation.\n\nWould you like help drafting a cancellation request for the bank?"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": true,
+                "weight": 1.0,
+                "metadata": {
+                    "finish_details": {
+                        "type": "stop",
+                        "stop_tokens": [
+                            200002,
+                            200007
+                        ]
+                    },
+                    "is_complete": true,
+                    "citations": [],
+                    "content_references": [],
+                    "message_type": null,
+                    "model_slug": "gpt-4o",
+                    "default_model_slug": "auto",
+                    "parent_id": "bbb21dc5-dcaf-4349-bb47-14799d01bf30",
+                    "request_id": "91146dfc485317b2-MAA",
+                    "timestamp_": "absolute",
+                    "model_switcher_deny": []
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "bbb21dc5-dcaf-4349-bb47-14799d01bf30",
+            "children": [
+                "bbb21ce4-d450-4d9e-bb4a-2b37338f24ec"
+            ]
+        },
+        "bbb21ce4-d450-4d9e-bb4a-2b37338f24ec": {
+            "id": "bbb21ce4-d450-4d9e-bb4a-2b37338f24ec",
+            "message": {
+                "id": "bbb21ce4-d450-4d9e-bb4a-2b37338f24ec",
+                "author": {
+                    "role": "user",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739446651.710369,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "In  net banking site\nI cannot find e mandate option"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": null,
+                "weight": 1.0,
+                "metadata": {
+                    "citations": [],
+                    "content_references": [],
+                    "search_result_groups": [],
+                    "image_results": [],
+                    "real_time_audio_has_video": false,
+                    "request_id": "911486decd7184e9-BOM",
+                    "message_source": null,
+                    "timestamp_": "absolute",
+                    "message_type": null
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "4ba9afd4-ae1f-4197-a386-15c990a67216",
+            "children": [
+                "f000d518-1dfb-4276-92c9-141c4a06f822"
+            ]
+        },
+        "f000d518-1dfb-4276-92c9-141c4a06f822": {
+            "id": "f000d518-1dfb-4276-92c9-141c4a06f822",
+            "message": {
+                "id": "f000d518-1dfb-4276-92c9-141c4a06f822",
+                "author": {
+                    "role": "assistant",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739446672.71366,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "If you cannot find the **e-Mandate** option in HDFC NetBanking, try these alternative steps:  \n\n### **1. Check Under \"Bill Payments\"**\n1. **Log in** to [HDFC NetBanking](https://netbanking.hdfcbank.com/netbanking/).  \n2. Go to **Bill Payments** > **Pay/Autopay**.  \n3. Look for an option related to **Standing Instructions / Auto Debit / e-Mandate**.  \n\n### **2. Check Under \"Requests\"**\n1. Navigate to **Requests** > **Mandates / Standing Instructions**.  \n2. See if your mandate is listed and if there’s an option to cancel.  \n\n### **3. Try HDFC Mobile App**\n1. Open the **HDFC Mobile Banking App** and log in.  \n2. Go to **Bill Payments / e-Mandates**.  \n3. Locate the active mandate and cancel it.  \n\n### **4. Contact HDFC Customer Support**\nIf the option isn’t available online, call HDFC **Phone Banking**:  \n- **1800 202 6161** (Toll-Free)  \n- **1860 267 6161** (Chargeable)  \nAsk them to **cancel your e-Mandate** using the **UMN** from your SMS.  \n\n### **5. Visit an HDFC Branch**\nIf online cancellation isn’t possible, visit your nearest **HDFC Bank branch** with:  \n- Your **ID proof**  \n- A **written request** for mandate cancellation  \n\nSince this mandate is for the **Indian Clearing Corporation**, it could be linked to a stock market, mutual funds, or loan EMI. Do you recognize this mandate, or do you need help understanding what it’s for?"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": true,
+                "weight": 1.0,
+                "metadata": {
+                    "finish_details": {
+                        "type": "stop",
+                        "stop_tokens": [
+                            200002,
+                            200007
+                        ]
+                    },
+                    "is_complete": true,
+                    "citations": [],
+                    "content_references": [],
+                    "message_type": null,
+                    "model_slug": "gpt-4o",
+                    "default_model_slug": "auto",
+                    "parent_id": "bbb21ce4-d450-4d9e-bb4a-2b37338f24ec",
+                    "request_id": "911486decd7184e9-BOM",
+                    "timestamp_": "absolute",
+                    "model_switcher_deny": []
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "bbb21ce4-d450-4d9e-bb4a-2b37338f24ec",
+            "children": [
+                "bbb212c4-e805-415a-9dab-63e65b1d0fd6"
+            ]
+        },
+        "bbb212c4-e805-415a-9dab-63e65b1d0fd6": {
+            "id": "bbb212c4-e805-415a-9dab-63e65b1d0fd6",
+            "message": {
+                "id": "bbb212c4-e805-415a-9dab-63e65b1d0fd6",
+                "author": {
+                    "role": "user",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739447009.182675,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "I got this\nIt is due to motilal oswal sip i started last month\nHow can i stop it for now"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": null,
+                "weight": 1.0,
+                "metadata": {
+                    "citations": [],
+                    "content_references": [],
+                    "search_result_groups": [],
+                    "image_results": [],
+                    "real_time_audio_has_video": false,
+                    "request_id": "91148f9a1cc852aa-CCU",
+                    "message_source": null,
+                    "timestamp_": "absolute",
+                    "message_type": null
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "f000d518-1dfb-4276-92c9-141c4a06f822",
+            "children": [
+                "775d621a-c489-4251-bef2-85f35d372127"
+            ]
+        },
+        "775d621a-c489-4251-bef2-85f35d372127": {
+            "id": "775d621a-c489-4251-bef2-85f35d372127",
+            "message": {
+                "id": "775d621a-c489-4251-bef2-85f35d372127",
+                "author": {
+                    "role": "assistant",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739447021.372456,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "Since the **e-Mandate** is linked to your **Motilal Oswal SIP**, you need to cancel it through **Motilal Oswal** first, as they initiated the mandate. Here’s how you can stop it:  \n\n---\n\n### **1. Cancel SIP via Motilal Oswal App/Website**  \n1. **Log in** to your [Motilal Oswal Account](https://www.motilaloswal.com/) or use the Motilal Oswal app.  \n2. Go to **Portfolio > Mutual Funds > Active SIPs**.  \n3. Select the SIP you want to cancel.  \n4. Click on **Cancel SIP / Stop SIP** and confirm.  \n\n---\n\n### **2. Call Motilal Oswal Customer Care**  \nIf you can’t cancel online, call their support team:  \n- **Helpline:** 📞 **022 4054 2424 / 022 6277 3000**  \n- **"
+                    ]
+                },
+                "status": "in_progress",
+                "end_turn": null,
+                "weight": 1.0,
+                "metadata": {
+                    "citations": [],
+                    "content_references": [],
+                    "message_type": null,
+                    "model_slug": "gpt-4o",
+                    "default_model_slug": "auto",
+                    "parent_id": "bbb212c4-e805-415a-9dab-63e65b1d0fd6",
+                    "finish_details": {
+                        "type": "interrupted"
+                    },
+                    "request_id": "91148f9a1cc852aa-CCU",
+                    "timestamp_": "absolute",
+                    "model_switcher_deny": []
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "bbb212c4-e805-415a-9dab-63e65b1d0fd6",
+            "children": [
+                "20c3d8f0-ec59-4ba0-8496-5450aa4a359c"
+            ]
+        },
+        "20c3d8f0-ec59-4ba0-8496-5450aa4a359c": {
+            "id": "20c3d8f0-ec59-4ba0-8496-5450aa4a359c",
+            "message": {
+                "id": "20c3d8f0-ec59-4ba0-8496-5450aa4a359c",
+                "author": {
+                    "role": "assistant",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739447046.837276,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "Since your **e-Mandate** is linked to **Motilal Oswal SIP**, which you started via **Groww**, you’ll need to cancel it through the **Groww app**. Here’s how you can stop it:  \n\n---\n\n### **Steps to Cancel SIP in Groww**  \n1. **Open the Groww App** and **log in**.  \n2. Tap on **\"Investments\"** from the bottom menu.  \n3. Find the **Motilal Oswal SIP** you want to stop.  \n4. Tap on **\"SIP Details\"** or **\"Manage SIP\"**.  \n5. Look for the option to **Cancel SIP** or **Stop Auto-Debit**.  \n6. Confirm the cancellation.  \n\n---\n\n### **Steps to Cancel the e-Mandate (Auto-Debit) in Groww**  \nEven after stopping the SIP, your **e-Mandate** may still be active. To stop future auto-debits:  \n\n1. Go to **Profile > Payments & Mandates** in the Groww app.  \n2. Select **Active Mandates**.  \n3. Find the **HDFC Bank e-Mandate** linked to Motilal Oswal.  \n4. Tap **Cancel Mandate** and confirm.  \n\n---\n\n### **Alternative: Contact Groww Support**  \nIf you can't find the option, reach out to **Groww Customer Support** via:  \n- **In-app Chat** (Go to **Help & Support** in the Groww app)  \n- Email: **support@groww.in**  \n\n---\n\n### **Important Notes**  \n- **Cancelling SIP** stops future investments but **doesn’t refund past investments**.  \n- **Cancelling e-Mandate** ensures no automatic debits in the future.  \n- SIP cancellation **may take up to 3-4 business days** to process.  \n\nLet me know if you need any further help!"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": true,
+                "weight": 1.0,
+                "metadata": {
+                    "finish_details": {
+                        "type": "stop",
+                        "stop_tokens": [
+                            200002,
+                            200007
+                        ]
+                    },
+                    "is_complete": true,
+                    "citations": [],
+                    "content_references": [],
+                    "message_type": null,
+                    "model_slug": "gpt-4o",
+                    "default_model_slug": "auto",
+                    "parent_id": "bbb2163e-5a2e-4adf-83cc-50a54725d2c1",
+                    "request_id": "91148fecdafb52aa-CCU",
+                    "timestamp_": "absolute",
+                    "model_switcher_deny": []
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "775d621a-c489-4251-bef2-85f35d372127",
+            "children": [
+                "bbb2127a-750e-43e3-861b-e8c56aaeab11"
+            ]
+        },
+        "bbb2127a-750e-43e3-861b-e8c56aaeab11": {
+            "id": "bbb2127a-750e-43e3-861b-e8c56aaeab11",
+            "message": {
+                "id": "bbb2127a-750e-43e3-861b-e8c56aaeab11",
+                "author": {
+                    "role": "user",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739447062.162846,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "What will happen to my current 5000 invested in that sip"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": null,
+                "weight": 1.0,
+                "metadata": {
+                    "citations": [],
+                    "content_references": [],
+                    "search_result_groups": [],
+                    "image_results": [],
+                    "real_time_audio_has_video": false,
+                    "request_id": "911490e72bfb52aa-CCU",
+                    "message_source": null,
+                    "timestamp_": "absolute",
+                    "message_type": null
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "20c3d8f0-ec59-4ba0-8496-5450aa4a359c",
+            "children": [
+                "ef000ad5-e786-4119-900b-37190e0ac550"
+            ]
+        },
+        "ef000ad5-e786-4119-900b-37190e0ac550": {
+            "id": "ef000ad5-e786-4119-900b-37190e0ac550",
+            "message": {
+                "id": "ef000ad5-e786-4119-900b-37190e0ac550",
+                "author": {
+                    "role": "assistant",
+                    "name": null,
+                    "metadata": {}
+                },
+                "create_time": 1739447086.467534,
+                "update_time": null,
+                "content": {
+                    "content_type": "text",
+                    "parts": [
+                        "Your current **₹5000 investment** in the **Motilal Oswal SIP** will remain invested in the mutual fund. Here’s what happens next:  \n\n### **1. Investment Stays Active**  \n- The **units you purchased** with ₹5000 will continue to be part of your mutual fund portfolio.  \n- They will grow (or decline) based on the **market performance** of the fund.  \n\n### **2. You Can Redeem Anytime**  \n- If you want to **withdraw (redeem)** the invested amount, you can do it via **Groww**:  \n  1. Go to **Investments** in Groww.  \n  2. Select the **Motilal Oswal fund**.  \n  3. Click **Redeem** and choose the number of units or the full amount.  \n  4. The money will be credited to your bank (usually in **1-3 working days**).  \n\n### **3. No Future Auto-Debits**  \n- Since you are canceling the SIP, **no new ₹5000 deductions** will happen.  \n- However, your **existing units remain invested** until you redeem them.  \n\n### **4. Tax & Exit Load (If Applicable)**  \n- If you **redeem before 1 year**, **Short-Term Capital Gains Tax (STCG) of 15%** on profits may apply.  \n- Some funds have **exit loads** (e.g., 1% if withdrawn within a few months). Check Groww for details.  \n\n---\n\n### **What Should You Do?**  \n- **If you want to stay invested**: Leave the units in the fund and let them grow.  \n- **If you need money back**: Redeem through Groww.  \n\nDo you want to check whether an **exit load** applies to your specific SIP before withdrawing?"
+                    ]
+                },
+                "status": "finished_successfully",
+                "end_turn": true,
+                "weight": 1.0,
+                "metadata": {
+                    "finish_details": {
+                        "type": "stop",
+                        "stop_tokens": [
+                            200002,
+                            200007
+                        ]
+                    },
+                    "is_complete": true,
+                    "citations": [],
+                    "content_references": [],
+                    "message_type": null,
+                    "model_slug": "gpt-4o",
+                    "default_model_slug": "auto",
+                    "parent_id": "bbb2127a-750e-43e3-861b-e8c56aaeab11",
+                    "request_id": "911490e72bfb52aa-CCU",
+                    "timestamp_": "absolute",
+                    "model_switcher_deny": []
+                },
+                "recipient": "all",
+                "channel": null
+            },
+            "parent": "bbb2127a-750e-43e3-861b-e8c56aaeab11",
+            "children": []
+        }
+    },
+    "moderation_results": [],
+    "current_node": "ef000ad5-e786-4119-900b-37190e0ac550",
+    "plugin_ids": null,
+    "conversation_id": "67add50c-dcb0-8011-a4cf-0cfb1597a9bc",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": [
+        "https://www.motilaloswal.com/"
+    ],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": []
+}
