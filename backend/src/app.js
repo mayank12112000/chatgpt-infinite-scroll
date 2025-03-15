@@ -1,6 +1,6 @@
 import express  from 'express';
 import cors from "cors"
-import chat from "./chat.json" assert { type: "json" };
+import data from "./chat.json" assert { type: "json" };
 const app = express()
 
 app.use(cors({
@@ -33,7 +33,17 @@ app.use((err, req, res, next) => {
         stack: process.env.NODE_ENV === "development" ? err.stack : undefined,
     });
 });
-app.get("/",(req,res)=>{
-    res.send(chat)
+app.get("/chat",(req,res)=>{
+    const chat = Object.values(data.mapping);
+
+    const allChats = chat.map((chat) => ({
+        sender: chat.message?.author?.role,
+        message: typeof chat.message?.content?.parts?.[0] === "string" 
+          ? chat.message?.content?.parts?.[0] 
+          : JSON.stringify(chat.message?.content?.parts?.[0]) || "", // Convert objects to string safely
+      }));
+      
+      const chats = allChats.filter((chat) => chat.message);
+    res.send({length:chats.length,chats:chats})
 })
 export {app}
