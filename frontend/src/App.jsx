@@ -5,13 +5,14 @@ import './App.css'
 import Navbar from './components/Navbar'
 import MessageBar from './components/MessageBar'
 import Chat from './components/Chat.jsx'
+import InfiniteChat from './components/InfiniteChat.jsx'
 
 function App() {
 
   return (
     <div className='d-flex flex-column h-100 justify-content-between'>
     <Navbar/>
-    <Chat/>
+    <InfiniteChat/>
     <MessageBar/>
     </div>
   )

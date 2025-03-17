@@ -1,9 +1,11 @@
 .chat-container {
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 4rem;
     padding-top: 3rem;
+    max-width: 100%;
   }
   .chat-box {
     flex-grow: 1;
