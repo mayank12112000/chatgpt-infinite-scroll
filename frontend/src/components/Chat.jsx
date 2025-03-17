@@ -58,13 +58,13 @@ const Chat = () => {
       <div ref={chatBoxRef} className="chat-box flex-grow-1 p-3  rounded overflow-auto">
         {chats.map((chat, index) =>
           chat.sender === "user" ? (
-            <div key={index} className="message my-2 p-2 rounded user-chat align-self-end">
+            <div key={index} className="mb-3 message my-2 p-2 rounded user-chat align-self-end">
               {chat?.message}
             </div>
           ) : (
             <div
               key={index}
-              className="message my-2 p-2 rounded assistant-chat align-self-start"
+              className="message mb-3 my-2 p-2 rounded assistant-chat align-self-start"
               dangerouslySetInnerHTML={{ __html: marked(chat?.message || "") }}
             ></div>
           )

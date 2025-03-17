@@ -35,7 +35,8 @@ app.use((err, req, res, next) => {
 });
 app.get("/chat",(req,res)=>{
     const chat = Object.values(data.mapping);
-
+    const {page}=req.query
+    const pageSize = 10;
     const allChats = chat.map((chat) => ({
         sender: chat.message?.author?.role,
         message: typeof chat.message?.content?.parts?.[0] === "string" 
@@ -43,7 +44,10 @@ app.get("/chat",(req,res)=>{
           : JSON.stringify(chat.message?.content?.parts?.[0]) || "", // Convert objects to string safely
       }));
       
-      const chats = allChats.filter((chat) => chat.message);
-    res.send({length:chats.length,chats:chats})
+    const chats = allChats.filter((chat) => chat.message);
+    const length = chats.length;
+    const paginatedChats = chats.slice(length-(page*pageSize),length-((page-1)*pageSize));
+
+    res.send(page?{length:length,chats:paginatedChats}:{length:chats.length,chats})
 })
 export {app}
